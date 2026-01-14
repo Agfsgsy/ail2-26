@@ -1,0 +1,33 @@
+<section class="grid">
+  <div class="card">
+    <h2>مرحبًا بك في لوحة المشرف</h2>
+    <p>قم بإدارة الأقسام، وتحديث الصلاحيات، ومراجعة الحالة العامة للنظام.</p>
+    <div class="grid grid--two">
+      <div>
+        <h3>معلومات المشرف</h3>
+        <p>الاسم: <strong id="admin-name"></strong></p>
+        <p>الدور: <span class="status-pill" id="admin-role"></span></p>
+      </div>
+      <div>
+        <h3>إضافة قسم جديد</h3>
+        <form id="section-form">
+          <div class="form-group">
+            <label for="section-name">اسم القسم</label>
+            <input id="section-name" name="section-name" type="text" required />
+          </div>
+          <div class="form-group">
+            <label for="section-description">وصف القسم</label>
+            <textarea id="section-description" name="section-description" rows="3"></textarea>
+          </div>
+          <button class="primary" type="submit">إضافة القسم</button>
+          <div id="section-alert" class="alert success" hidden></div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>إدارة الصلاحيات</h3>
+    <div id="permissions-manager"></div>
+  </div>
+</section>
